@@ -1,0 +1,316 @@
+% Add landscape page in LaTeX
+\documentclass{article}
+
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%                                 Required package
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc} %reads utf8 characters
+\usepackage[sfdefault,light,medium]{josefin} %font
+
+\usepackage{lscape} %changes to horizontal the page
+\usepackage{blindtext} %lorem ipsum package
+\usepackage{geometry} %Margins
+\usepackage{fancyhdr}%header and footer
+%\usepackage[headheight=136pt, top=6.5cm]{geometry}
+%\usepackage{titleps} %For the header box
+
+\usepackage{microtype}
+\usepackage{graphicx, array} %pictures
+\usepackage{amsmath}
+
+
+\usepackage{float} %Tables and images
+\usepackage[table]{xcolor} %creates tables
+\usepackage{multirow} %allows to use multiple rows and columns in tables in one cell
+\usepackage{longtable}%more table customization
+
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%                                 Customization
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+
+%\SetTracking[no ligatures={f}]{encoding=*}{40}
+
+%---------------MARGINS---------------
+\geometry{
+	letterpaper,
+	total={190mm,230mm}, %Changes the margins
+	left=10mm,
+	top=35mm,
+	headsep=80pt
+}
+
+%-------------HEADER---------------------
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{| Page \thepage}
+\lhead{\includegraphics[scale=0.1]{mitsuki}}
+\chead{Company Name and slogan}
+%\fancyhfoffset[L]{1cm} % left extra length
+%\fancyhfoffset[R]{1cm} % right extra length
+
+
+%------------Table info----------------------------
+\setlength{\arrayrulewidth}{1mm} %width of the borders
+\setlength{\tabcolsep}{40pt}
+\renewcommand{\arraystretch}{2.5}
+\newcolumntype{s}{>{\columncolor[HTML]{AAACED}} p{3cm}}
+\arrayrulecolor[HTML]{1A5276}%colour of the borders of the table
+
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%                                 Begin Document
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+
+\begin{document}
+	\section{GENERAL DESCRIPTION}
+	%\blindtext[10] %Makes dummy text
+	
+\begin{center}
+	\begin{tabular}[t]{|p{4cm}|p{5cm}|p{5cm}| }
+		\hline
+		\rowcolor[HTML]{4F96C2} \multicolumn{3}{|c|}{\textbf{General Description}} \\
+		\hline
+		\cellcolor[HTML]{98B5C6} \textbf{Requirement} &
+		\multicolumn{2}{p{10cm}|}{} \\
+		\hline
+		\cellcolor[HTML]{98B5C6} \textbf{Name of the requirement} &
+		\multicolumn{2}{p{10cm}|}{} \\
+		\hline
+		\cellcolor[HTML]{98B5C6} \textbf{Request Date} &
+		\multicolumn{2}{p{10cm}|}{} \\
+		\hline
+		\cellcolor[HTML]{98B5C6} \textbf{Stakeholder} &
+		\multicolumn{2}{p{10cm}|}{} \\
+		\hline
+		\cellcolor[HTML]{98B5C6} \textbf{Product owner} &
+		\multicolumn{2}{p{10cm}|}{} \\
+		\hline
+	\end{tabular}
+\end{center}
+
+%------------------------------------------------------------------------
+\section{FORMALIZATION}
+
+\begin{center}
+	\begin{tabular}[t]{|p{17cm}| }
+		\hline
+		\rowcolor[HTML]{4F96C2} \textbf{Request Description}\\
+		\hline
+		\rowcolor[HTML]{98B5C6} \textbf{Stakeholder request}\\[0.03cm]
+		\hline
+		\textbf{}\\[5cm]
+		\hline
+
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	 
+\end{center}
+
+%-------------signatures box---------------
+\vfill
+\noindent\begin{tabular}{ll}
+	\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+	\hspace*{0mm}\phantom{Approved: }Stakeholder & \hspace*{0mm}\phantom{Approved: }Product Owner
+\end{tabular}
+%Approved: \hrulefill
+%
+%\hspace*{0mm}\phantom{Approved: }Fats Domino, Ph.D.
+%
+%\hspace*{0mm}\phantom{Approved: }Chair of the Department of Nutrition
+
+
+%---------second part-----------------
+\begin{center}
+	\begin{tabular}[t]{|p{17cm}| }
+		\hline
+%		\rowcolor[HTML]{4F96C2} \textbf{Request Description}\\
+%		\hline
+		\rowcolor[HTML]{98B5C6} \textbf{Product Owner request}\\[0.03cm]
+		\hline
+		\textbf{}\\[6cm]
+		\hline
+		
+	\end{tabular}
+\end{center}
+
+\vfill
+\noindent\begin{tabular}{ll}
+	\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+	\hspace*{0mm}\phantom{Approved: }Stakeholder & \hspace*{0mm}\phantom{Approved: }Product Owner
+\end{tabular}
+
+%----------------------------------------------------------------------------
+\section{ANALYSIS OF REQUIREMENTS AND REQUIREMENTS}
+
+\begin{tabular}{ |p{2cm}|p{2cm}|p{2cm}|p{2cm}|  }
+	\hline
+	\cellcolor[HTML]{98B5C6} \textbf{Start date:} & &\cellcolor[HTML]{98B5C6} \textbf{End date:} & \\
+	
+	\hline
+	
+	\rowcolor[HTML]{4F96C2}\multicolumn{4}{|c|}{\textbf{Analysis}} \\
+	
+	\hline
+	
+	\cellcolor[HTML]{98B5C6} \textbf{Preconditions} & \multicolumn{3}{c|}{}\\[2cm]
+	
+	\hline
+	
+	\cellcolor[HTML]{98B5C6} \textbf{Reach of the project} & \multicolumn{3}{c|}{}\\[3cm]
+	
+	\hline
+	
+	\cellcolor[HTML]{98B5C6} \textbf{Functional Requirements and Acceptance Criteria} & \multicolumn{3}{c|}{}\\[3cm]
+	
+	\hline
+	
+	\cellcolor[HTML]{98B5C6} \textbf{Non-functional and quality requirements} & \multicolumn{3}{c|}{}\\[3cm]
+	
+	\hline
+	
+	
+\end{tabular}
+%-------------signatures box---------------
+\vfill
+\noindent\begin{tabular}{ll}
+	\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+	\hspace*{0mm}\phantom{Approved: }Stakeholder & \hspace*{0mm}\phantom{Approved: }Product Owner
+\end{tabular}
+
+\newpage
+%---------TECHNICAL REQUIREMENTS------------------------
+
+\begin{tabular}{ |p{1cm} p{1cm} p{1.2cm} p{1.2cm} p{1.2cm}| }
+	\hline
+	\rowcolor[HTML]{4F96C2} \multicolumn{5}{| c |}{\textbf{Technical Requirements}}\\
+	
+	\hline
+	
+	\cellcolor[HTML]{98B5C6} \textbf{Type of development} & $\bigcirc$ Web& $\bigcirc$ \qquad Mobile	& $\bigcirc$ \qquad Desktop & $\bigcirc$ Web Service\\
+	\hline
+	
+	\cellcolor[HTML]{98B5C6} \multirow{2}{4em}{\textbf{Data Base}}  &  $\bigcirc$ \qquad Oracle & $\bigcirc$ \qquad SQL Server	& $\bigcirc$ \qquad MySQL & $\bigcirc$ Mongo DB\\
+	
+	\cellcolor[HTML]{98B5C6}& $\bigcirc$ Other:& & & \\
+	
+	\hline
+	
+	\cellcolor[HTML]{98B5C6} \textbf{Language}  &  \multicolumn{2}{c}{$\bigcirc$C\# \qquad $\bigcirc$C++}	& \multicolumn{2}{c|}{$\bigcirc$ Python}\\
+	
+	\cellcolor[HTML]{98B5C6}  &  \multicolumn{2}{c}{$\bigcirc$ Java}	& \multicolumn{2}{c|}{$\bigcirc$ JavaScript}\\
+	
+	
+	\cellcolor[HTML]{98B5C6}  &  \multicolumn{2}{c}{$\bigcirc$ Other:}	& \multicolumn{2}{c|}{}\\
+	
+	\hline
+
+\end{tabular}
+
+%-------------signatures box---------------
+\vfill
+\noindent\begin{tabular}{ll}
+	\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+	\hspace*{0mm}\phantom{Approved: }Stakeholder & \hspace*{0mm}\phantom{Approved: }Product Owner
+\end{tabular}
+
+%\begin{center}
+%	
+%\begin{tabular}{ |s|p{3cm}|p{3cm}| }
+%	\hline
+%	\rowcolor{lightgray} \multicolumn{3}{|c|}{Country List} \\
+%	\hline
+%	Country Name or Area Name& ISO ALPHA 2 Code &ISO ALPHA 3 \\
+%	\hline
+%	Afghanistan & AF &AFG \\
+%	\rowcolor{gray}
+%	Aland Islands & AX & ALA \\
+%	Albania   &AL & ALB \\
+%	Algeria  &DZ & DZA \\
+%	American Samoa & AS & ASM \\
+%	Andorra & AD & \cellcolor[HTML]{AA0044} AND    \\
+%	Angola & AO & AGO \\
+%	\hline
+%\end{tabular}
+%	
+%\end{center}
+%----------------------------------------------------------------
+%\begin{center}
+%	\begin{tabular}[t]{|p{2cm}|p{2cm}|p{2.8cm}|p{4.1cm}|p{1.1cm}|p{0.2cm}|}
+%		
+%		\hline
+%		\textbf{Requisito}   &   R1 & \textbf{Tipo Requisito}  &   Funzionale &     \textbf{Casi d'uso} & 1\\
+%		\cline{1-6}
+%		%\hline
+%		\textbf{Descrizione} &
+%		\multicolumn{5}{|p{10.2cm}|}{L’utente inserisce le  informazioni relative alla propria forma fisica, alle preferenze relative alle letture tematiche e alla privacy}\\
+%		\cline{1-6}
+%		\textbf{Descrizione} & bbb  &   bbbb                   &              &                         & \\
+%		\cline{1-6}
+%		\textbf{Razionale}   &  cc  &  ccc                     &   cccc       &                         & \\
+%		\cline{1-6}
+%		\textbf{Attore innescante} & &  dd                     &  ddd         &   dddd                  & \\
+%		\hline
+%	\end{tabular}
+%\end{center}	
+
+
+%------------------------------------------------
+%\begin{center}
+%	\begin{tabular}{ |c|c|c|c| } 
+%		\hline
+%		column1 & column2 & column3 \\
+%		\hline
+%		\multirow{3}{4em}{Three Rows Combined} & number2 & number3 \\ 
+%		& number5 & number6 \\ 
+%		& number8 & number9 \\ 
+%		\hline
+%	\end{tabular}
+%\end{center}
+
+%--------------------------------------------------------------
+% \begin{longtable}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}	
+%\hline
+%	\multicolumn{4}{| c |}{First Row in the Table}\\
+%	\hline
+%	\cellcolor[HTML]{98B5C6} Value1 & \multicolumn{3}{ c |}{First Row in the Table}\\
+%	\hline
+%	\endfirsthead
+%	
+%	\hline
+%	\multicolumn{4}{|c|}{Continuation of same Table }\\
+%	\hline
+%	Value1 & Value2 & ty & hgh\\
+%	\hline
+%	\endhead
+%	
+%	\hline
+%	\endfoot
+%	
+%	\hline
+%	\multicolumn{4}{| c |}{End of this Table \ref{holi}}\\
+%	\hline
+%	\endlastfoot
+%	
+%	Content for the table\\
+%	Content for the table\\
+%	Content for the table\\
+%	Content for the table\\
+%	Content for the table\\
+%	Content for the table\\
+%	Content for the table\\
+%	...
+%	Content for the table\\
+%\end{longtable}
+	
+	
+	
+\end{document}
+
